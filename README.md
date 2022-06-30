@@ -5,6 +5,8 @@
 
 - 🌱 I’m currently learning **Advanced C#, Python**
 
+- I can't upload much content here because I'm interested in custom software.**
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/obikerelikolur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="obikerelikolur" height="30" width="40" /></a>
