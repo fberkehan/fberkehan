@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Furkan</h1>
 <h3 align="center">A passionate frontend developer from Turkey</h3>
 
-- 🔭 I’m currently working on **ApollonAgency**
+- 🔭 I’m currently working on **Apollon Software (Welcome to future)**
 
 - 🌱 I’m currently learning **Advanced C#, Python**
 
