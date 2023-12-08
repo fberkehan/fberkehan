@@ -1,12 +1,6 @@
 <h1 align="center">Welcome I'm Furkan</h1>
 <h3 align="center">A passionate frontend developer from Turkey</h3>
 
-- 🔭 I’m currently working on **Apollon Software (Welcome to future)**
-
-- 🌱 I’m currently learning **Advanced C#, Python**
-
-- I can't upload much content here because I'm interested in custom software.**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/furkan-berkehan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="furkan-berkehan" height="30" width="40" /></a>
