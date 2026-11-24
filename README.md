@@ -49,7 +49,7 @@
 
 - 🤖 **Fuber AI v3** · `3.0.0-alpha.2`. Two apps became one, the interface was redrawn from the first pixel, and the assistant now has its own name: **O.R.I.O.N.**
 - 🧠 **FUBERNEURO** · Phase 0, research and design: the AI behind a neural interface.
-- 📦 **The source is open** · [Fuber AI v1](https://github.com/fberkehan/fuber-ai-v1) (Apache-2.0) and [Fuber AI v2](https://github.com/fberkehan/fuber-ai-v2) (FSL-1.1-ALv2) are public.
+- 📦 **The source is open** · [Fuber AI v1](https://github.com/fberkehan/orion/tree/v1) (Apache-2.0) and [Fuber AI v2](https://github.com/fberkehan/orion/tree/v2) (FSL-1.1-ALv2) are public.
 
 <br>
 
@@ -131,9 +131,9 @@ Since 24 November the homepage of [fuber.ai](https://fuber.ai) is this generatio
   <img alt="Three generations of the assistant: an archived first version, a modular second, a larger third." src="assets/generations-dark.svg" width="100%">
 </picture>
 
-**🥚 v1 · the first try.** Memory and chats stayed on your computer, and the wake phrase was "Hey Fuber". Archived at `0.18.2`. Its open-source edition, [fuber-ai-v1](https://github.com/fberkehan/fuber-ai-v1) (Apache-2.0), is fully local-first and runs on a model you bring yourself.
+**🥚 v1 · the first try.** Memory and chats stayed on your computer, and the wake phrase was "Hey Fuber". Archived at `0.18.2`. Its open-source edition, [orion · v1 branch](https://github.com/fberkehan/orion/tree/v1) (Apache-2.0), is fully local-first and runs on a model you bring yourself.
 
-**🐣 v2 · the rewrite.** A small core, with everything else a module. Voice first, woken by a phrase. Sixteen demo versions in three days. Its source-available edition is [fuber-ai-v2](https://github.com/fberkehan/fuber-ai-v2) (FSL-1.1-ALv2).
+**🐣 v2 · the rewrite.** A small core, with everything else a module. Voice first, woken by a phrase. Sixteen demo versions in three days. Its source-available edition is [orion · v2 branch](https://github.com/fberkehan/orion/tree/v2) (FSL-1.1-ALv2).
 
 **🦅 v3 · the one meant to become the product.** One app instead of two, a new design language, and an assistant with its own name, O.R.I.O.N. `3.0.0-alpha.2`, in progress.
 
@@ -761,13 +761,13 @@ Claude is also inside the product. It does the talking, it does the deep work, a
 
 Where openness earns trust, we publish the code.
 
-- **[Fuber AI v1](https://github.com/fberkehan/fuber-ai-v1)** is open source under **Apache-2.0**. It is fully self-contained: there is no Fuber server, account system, telemetry, update feed or licence check in the code.
-- **[Fuber AI v2](https://github.com/fberkehan/fuber-ai-v2)** is source-available under **FSL-1.1-ALv2**: read it, run it, learn from it; after two years each release becomes Apache-2.0. Quest 3 and Galaxy Watch bridges ship separately as optional device plugins.
+- **[Fuber AI v1](https://github.com/fberkehan/orion/tree/v1)** is open source under **Apache-2.0**. It is fully self-contained: there is no Fuber server, account system, telemetry, update feed or licence check in the code.
+- **[Fuber AI v2](https://github.com/fberkehan/orion/tree/v2)** is source-available under **FSL-1.1-ALv2**: read it, run it, learn from it; after two years each release becomes Apache-2.0. Quest 3 and Galaxy Watch bridges ship separately as optional device plugins.
 - **Licences are read before anything ships.** The WhatsApp module is left out of the v1 release because it depends on a GPL-licensed library. Larger voices and models are downloaded at run time instead of being redistributed, and each one keeps its own licence.
 
 <p align="center">
-  <a href="https://github.com/fberkehan/fuber-ai-v1"><img src="https://img.shields.io/badge/fuber--ai--v1-Apache--2.0-3B82F6?style=for-the-badge&logo=github" alt="fuber-ai-v1 · Apache-2.0"></a>
-  <a href="https://github.com/fberkehan/fuber-ai-v2"><img src="https://img.shields.io/badge/fuber--ai--v2-FSL--1.1--ALv2-E07A5F?style=for-the-badge&logo=github" alt="fuber-ai-v2 · FSL-1.1-ALv2"></a>
+  <a href="https://github.com/fberkehan/orion/tree/v1"><img src="https://img.shields.io/badge/orion%20v1-Apache--2.0-3B82F6?style=for-the-badge&logo=github" alt="orion v1 · Apache-2.0"></a>
+  <a href="https://github.com/fberkehan/orion/tree/v2"><img src="https://img.shields.io/badge/orion%20v2-FSL--1.1--ALv2-E07A5F?style=for-the-badge&logo=github" alt="orion v2 · FSL-1.1-ALv2"></a>
 </p>
 
 <br>
@@ -870,7 +870,7 @@ Only milestones with a date in our own records. All of it is 2026.
 
 - 🦅 **Fuber AI v3** leaves alpha, and then comes the real test: six months on my own desk.
 - 🧠 **FUBERNEURO** moves to Phase 1: offline decoder models on open neural datasets.
-- 📌 **The v1 and v2 source is public** ([fuber-ai-v1](https://github.com/fberkehan/fuber-ai-v1), [fuber-ai-v2](https://github.com/fberkehan/fuber-ai-v2)); next, both get pinned on this profile.
+- 📌 **The v1 and v2 source is public** ([orion · v1 branch](https://github.com/fberkehan/orion/tree/v1), [orion · v2 branch](https://github.com/fberkehan/orion/tree/v2)); next, the orion repository gets pinned on this profile.
 
 ### 🚪 The door
 
