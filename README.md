@@ -870,7 +870,7 @@ Only milestones with a date in our own records. All of it is 2026.
 
 - 🦅 **Fuber AI v3** leaves alpha, and then comes the real test: six months on my own desk.
 - 🧠 **FUBERNEURO** moves to Phase 1: offline decoder models on open neural datasets.
-- 📦 **The v1 and v2 source** goes public, and the repositories get pinned on this profile.
+- 📌 **The v1 and v2 source is public** ([fuber-ai-v1](https://github.com/fberkehan/fuber-ai-v1), [fuber-ai-v2](https://github.com/fberkehan/fuber-ai-v2)); next, both get pinned on this profile.
 
 ### 🚪 The door
 
