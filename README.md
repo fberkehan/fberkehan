@@ -10,7 +10,7 @@
 
 ### I build personal AI: the kind that stays with you all day, remembers, and by default asks before it sends, deletes or pays.
 
-[fuber.ai](https://fuber.ai) &nbsp;·&nbsp; [Fuber AI](https://fuber.ai/products/fuber-ai/) &nbsp;·&nbsp; [FUBERNEURO](https://fuber.ai/research/) &nbsp;·&nbsp; [ZILKO](https://zilko.co) &nbsp;·&nbsp; [BIDORA](https://bidora.fuber.ai) &nbsp;·&nbsp; [Chat](https://chat.fuber.ai) &nbsp;·&nbsp; [FuberWords](https://word.fuber.ai)
+[fuber.ai](https://fuber.ai) &nbsp;·&nbsp; [Fuber AI](https://fuber.ai/) &nbsp;·&nbsp; [FUBERNEURO](https://fuber.ai/fuberneuro/) &nbsp;·&nbsp; [ZILKO](https://zilko.co) &nbsp;·&nbsp; [BIDORA](https://bidora.fuber.ai) &nbsp;·&nbsp; [Chat](https://chat.fuber.ai) &nbsp;·&nbsp; [FuberWords](https://word.fuber.ai)
 
 <br>
 
@@ -47,7 +47,7 @@
 
 **🚧 On the bench right now**
 
-- 🤖 **Fuber AI v3** · `3.0.0-alpha.1`. Two apps became one, and the interface is being redrawn from the first pixel.
+- 🤖 **Fuber AI v3** · `3.0.0-alpha.2`. Two apps became one, the interface was redrawn from the first pixel, and the assistant now has its own name: **O.R.I.O.N.**
 - 🧠 **FUBERNEURO** · Phase 0, research and design: the AI behind a neural interface.
 - 📦 **The source is open** · [Fuber AI v1](https://github.com/fberkehan/fuber-ai-v1) (Apache-2.0) and [Fuber AI v2](https://github.com/fberkehan/fuber-ai-v2) (FSL-1.1-ALv2) are public.
 
@@ -58,7 +58,7 @@
 <table>
 <tr>
 <td width="50%" valign="top">📖&nbsp;<a href="#prologue"><b>Prologue</b></a><br><sub>Who is writing, and why AI</sub></td>
-<td width="50%" valign="top">🤖&nbsp;<a href="#ch1"><b>1 · Fuber AI</b></a><br><sub>The Jarvis I always wanted</sub></td>
+<td width="50%" valign="top">🤖&nbsp;<a href="#ch1"><b>1 · Fuber AI</b></a><br><sub>Meet O.R.I.O.N.</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top">⚙️&nbsp;<a href="#ch2"><b>2 · Under the hood</b></a><br><sub>Voice pipeline, three brains, memory</sub></td>
@@ -111,17 +111,17 @@ Two rules hold the rest together. **By default, the assistant asks before it sen
   <img alt="" src="assets/chapter-01-dark.svg" width="100%">
 </picture>
 
-## 🤖 Chapter 1 · Fuber AI: the Jarvis I always wanted
+## 🤖 Chapter 1 · Fuber AI: meet O.R.I.O.N.
 
 <img src="assets/icon-fuber-ai.svg" width="88" align="right" alt="">
 
 **Fuber AI is a personal assistant for the Windows desktop.** It starts with the computer and lives in the tray. You wake it with a phrase and talk. The main window is a command centre you can open, not a door you have to walk through.
 
-By default it answers to "Jarvis". The name and the wake phrase are settings, not branding: Jarvis is only the default persona name, and this project is not affiliated with any trademark owner.
+Its assistant is called **O.R.I.O.N.**, short for *Optimized Reasoning & Intelligent Operations Network*. Out loud it is simply "Orion": you say "Hey Orion" and talk. The name and the wake phrase are settings, so you can give it a name of your own.
 
 The plan is simple: I use it myself for six months. If it earns its place on my desk, it becomes a product.
 
-One note on the link at the top: the product page on fuber.ai still describes the first generation (v1, in private beta). This page is ahead of it.
+Since 24 November the homepage of [fuber.ai](https://fuber.ai) is this generation: it walks through a whole day with the assistant, scene by scene, and early access opens there.
 
 ### 🧬 Three generations
 
@@ -133,9 +133,9 @@ One note on the link at the top: the product page on fuber.ai still describes th
 
 **🥚 v1 · the first try.** Memory and chats stayed on your computer, and the wake phrase was "Hey Fuber". Archived at `0.18.2`. Its open-source edition, [fuber-ai-v1](https://github.com/fberkehan/fuber-ai-v1) (Apache-2.0), is fully local-first and runs on a model you bring yourself.
 
-**🐣 v2 · the rewrite.** A small core, with everything else a module. Voice first. "Hey Jarvis" by default. Sixteen demo versions in three days. Its source-available edition is [fuber-ai-v2](https://github.com/fberkehan/fuber-ai-v2) (FSL-1.1-ALv2).
+**🐣 v2 · the rewrite.** A small core, with everything else a module. Voice first, woken by a phrase. Sixteen demo versions in three days. Its source-available edition is [fuber-ai-v2](https://github.com/fberkehan/fuber-ai-v2) (FSL-1.1-ALv2).
 
-**🦅 v3 · the one meant to become the product.** One app instead of two, and a new design language. `3.0.0-alpha.1`, in progress.
+**🦅 v3 · the one meant to become the product.** One app instead of two, a new design language, and an assistant with its own name, O.R.I.O.N. `3.0.0-alpha.2`, in progress.
 
 ### 🔥 Why v1 was not enough
 
@@ -166,7 +166,7 @@ v1 worked, and I still could not live with it. Before v2 was written we went loo
 Everything below exists in the v3 code. Our own rule applies here too: a feature only counts once it has been tried in real conditions, so whatever has not been is marked 🧪.
 
 <table>
-<tr><td width="64" align="center"><img src="assets/cap-wake.svg" width="44" alt=""></td><td><b>"Hey Jarvis"</b><br>The wake phrase is detected on the computer itself.</td></tr>
+<tr><td width="64" align="center"><img src="assets/cap-wake.svg" width="44" alt=""></td><td><b>"Hey Orion"</b><br>The wake phrase is detected on the computer itself.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-voice.svg" width="44" alt=""></td><td><b>A local voice</b><br>Speech is recognised by Whisper on the graphics card, and the voice is synthesised on the same card. Once a sentence is ready, the local voice starts speaking in about a tenth of a second.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-brain.svg" width="44" alt=""></td><td><b>Claude as the talking brain</b><br>Spoken and written conversation runs on Claude. On my own desk today that is the Claude Code CLI installed on the machine, kept warm, reaching the assistant's tools through an in-app MCP server. The product path is the Anthropic API, and the commercial version will follow Anthropic's terms.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-memory.svg" width="44" alt=""></td><td><b>Memory with sources</b><br>Transcript, episodes, facts, commitments. Every record knows where it came from. "Forget this" really deletes.</td></tr>
@@ -444,7 +444,7 @@ The assistant should not end at the edge of a monitor. These experiments take it
 </picture>
 
 <table>
-<tr><td width="64" align="center"><img src="assets/cap-hud.svg" width="44" alt=""></td><td><b>A holographic HUD (JARVIS mode)</b><br>A holographic full-screen mode on the desktop: environment, calendar, system load, markets, links and the assistant's log on one heads-up display.</td></tr>
+<tr><td width="64" align="center"><img src="assets/cap-hud.svg" width="44" alt=""></td><td><b>A holographic HUD (Orion mode)</b><br>Say "switch to Orion mode" and a holographic full-screen mode opens on the desktop: environment, calendar, system load, markets, links and the assistant's log on one heads-up display.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-quest.svg" width="44" alt=""></td><td><b>Meta Quest 3</b><br>The same HUD in mixed reality, built for hand tracking. From the headset you can switch tabs, change the palette, open an item or trigger the emergency stop.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-heart.svg" width="44" alt=""></td><td><b>Galaxy Watch</b><br>Heart rate, battery and wear state from the wrist, shown on a Watch page next to everything else.</td></tr>
 <tr><td width="64" align="center"><img src="assets/cap-lock.svg" width="44" alt=""></td><td><b>A private bridge</b><br>Devices pair with a QR code and a six-digit PIN, then talk over an encrypted link (X25519, HKDF, AES-256-GCM) on the local network. Nothing passes through a server.</td></tr>
@@ -543,7 +543,7 @@ The published results the program builds on belong to other research groups, and
 
 </details>
 
-→ [Read the program at fuber.ai/research](https://fuber.ai/research/) <sub>(the site still lists it as Fuber Research)</sub>
+→ [Read the program at fuber.ai/fuberneuro](https://fuber.ai/fuberneuro/)
 
 <br>
 
@@ -762,7 +762,7 @@ Claude is also inside the product. It does the talking, it does the deep work, a
 Where openness earns trust, we publish the code.
 
 - **[Fuber AI v1](https://github.com/fberkehan/fuber-ai-v1)** is open source under **Apache-2.0**. It is fully self-contained: there is no Fuber server, account system, telemetry, update feed or licence check in the code.
-- **[Fuber AI v2](https://github.com/fberkehan/fuber-ai-v2)** is source-available under **FSL-1.1-ALv2**: read it, run it, learn from it; after two years each release becomes Apache-2.0. Quest 3 and Galaxy Watch bridges ship separately as "for JARVIS" plugins.
+- **[Fuber AI v2](https://github.com/fberkehan/fuber-ai-v2)** is source-available under **FSL-1.1-ALv2**: read it, run it, learn from it; after two years each release becomes Apache-2.0. Quest 3 and Galaxy Watch bridges ship separately as optional device plugins.
 - **Licences are read before anything ships.** The WhatsApp module is left out of the v1 release because it depends on a GPL-licensed library. Larger voices and models are downloaded at run time instead of being redistributed, and each one keeps its own licence.
 
 <p align="center">
@@ -804,6 +804,7 @@ Only milestones with a date in our own records. All of it is 2026.
 | **17&nbsp;Nov** | 🥽 Work starts on the Meta Quest 3 bridge |
 | **18&nbsp;Nov** | 🛰️ v2 `demo.16`, the holographic HUD and the first headset build |
 | **23&nbsp;Nov** | 🦅 Fuber AI `3.0.0-alpha.1`: one app. Source releases in preparation |
+| **24&nbsp;Nov** | 🌌 fuber.ai's homepage becomes Fuber AI v3, FUBERNEURO gets its own page, and the assistant is named O.R.I.O.N. (`3.0.0-alpha.2`) |
 
 <br>
 
